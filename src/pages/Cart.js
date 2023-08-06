@@ -10,7 +10,7 @@ function Cart() {
         <LocationForm />
         <Payment />
       </div>
-      <div className="w-full lg:w-2/5 flex justify-center items-center lg:my-0 lg:mb-2 md:my-4">
+      <div className="w-full lg:w-2/5 flex justify-center items-center lg:my-0 lg:mb-2 my-3">
         <CartItems />
       </div>
     </div>
