@@ -43,14 +43,17 @@ const images = [
   {
     id: "1",
     img: "https://cdn2.iconfinder.com/data/icons/social-micon/512/linkedin-512.png",
+    link: "https://www.linkedin.com/in/anandakrishnan-dinej-29b737227/"
   },
   {
     id: "2",
     img: "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png",
+    link: "https://github.com/Anandakrishnan21"
   },
   {
     id: "3",
     img: "https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png",
+    link: "https://www.instagram.com/kricz_21/"
   },
 ];
 
@@ -62,12 +65,14 @@ function Footer() {
           <p className="text-2xl font-semibold">Follow</p>
           <div className="w-full flex flex-row justify-center gap-x-3">
             {images.map((image) => (
+              <a href={image.link}>
               <img
                 key={image.id}
                 src={image.img}
                 alt=""
                 className="w-10 h-10"
               />
+              </a>
             ))}
           </div>
         </div>

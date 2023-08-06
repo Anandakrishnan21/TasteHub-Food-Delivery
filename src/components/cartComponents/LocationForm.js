@@ -3,10 +3,10 @@ import React from "react";
 function LocationForm() {
   return (
     <>
-      <div className="bg-rose-100 flex flex-col justify-center items-center h-1/2 gap-3 w-11/12 rounded">
-        <form className="w-full h-full p-2">
+      <div className="bg-rose-100 flex flex-col justify-start lg:items-center gap-3 w-11/12 rounded">
+        <form className="w-full h-full p-2 flex flex-col gap-2">
           <p className="font-semibold text-2xl">Delivery Address</p>
-          <div className="w-full h-full flex flex-col justify-center gap-3">
+          <div className="w-full h-full flex flex-col gap-3">
             <div className="w-full h-10">
               <input
                 type="text"
