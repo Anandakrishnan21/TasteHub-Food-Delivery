@@ -6,7 +6,7 @@ import Payment from '../components/cartComponents/Payment'
 function Cart() {
   return (
     <div className='w-full h-full flex flex-col lg:flex-row justify-center'>
-      <div className='w-full lg:w-3/5 flex flex-col justify-center items-center h-screen gap-2'>
+      <div className='w-full lg:w-3/5 flex flex-col justify-around lg:justify-center items-center h-screen gap-2'>
         <LocationForm />
         <Payment />
       </div>
