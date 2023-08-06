@@ -34,10 +34,10 @@ function Category() {
       {data.map((item) => (
         <div
           key={item.id}
-          className={`w-full  flex flex-row justify-center items-center border-2 border-rose-600 rounded`}
+          className={`w-full h-1/3 lg:h-3/5 flex flex-row justify-center items-center border-2 border-rose-600 rounded`}
         >
           <div
-            className={`w-1/2 h-72 lg:h-96 bg-${item.color} text-${item.text} flex flex-col justify-center items-center text-center font-semibold gap-y-3`}
+            className={`w-1/2 h-72 lg:h-full bg-${item.color} text-${item.text} flex flex-col justify-center items-center text-center font-semibold gap-y-3 rounded-l`}
           >
             <p className="text-2xl font-semibold">{item.name}</p>
             <p>{item.desc}</p>
@@ -45,12 +45,12 @@ function Category() {
               <button className="w-24 p-2 bg-lime-400 rounded">Explore</button>
             </Link>
           </div>
-          <div className="w-1/2">
+          <div className="w-1/2 h-full">
             <img
               src={item.img}
               alt=""
               fill
-              className="object-cover w-full h-72 lg:h-96 rounded-r"
+              className="object-cover w-full h-72 lg:h-full rounded-r"
             />
           </div>
         </div>
