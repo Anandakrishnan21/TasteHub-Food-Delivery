@@ -17,7 +17,7 @@ function Food() {
         {categoryProducts.map((product) => (
           <div
             key={product.id}
-            className="flex flex-col items-center justify-center w-full md:w-1/2 p-4 lg:w-1/3 h-1/2 hover:bg-rose-50 rounded"
+            className="flex flex-col items-center justify-center w-full p-4 lg:w-1/3 hover:bg-rose-50 rounded"
           >
             {product.img && (
               <div className="w-48 h-48">

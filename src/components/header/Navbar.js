@@ -16,7 +16,14 @@ function Navbar() {
   return (
     <header className="w-full sticky top-0 z-[1] p-2 bg-rose-400 text-white">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-2">
-        <div className="text-2xl font-semibold">TasteHub</div>
+        <div className="text-2xl font-semibold flex flex-row items-center gap-2">
+          <img
+            src="https://cdn2.iconfinder.com/data/icons/quarantine-4/64/food_delivery_scooter_motorcycle_transportation0-512.png"
+            alt=""
+            className="w-10 h-10"
+          />
+          <p>TasteHub</p>
+        </div>
         <Nav className=" hidden md:block">
           <ul className="list-none flex space-x-5 text-2xl">
             <li>
