@@ -13,7 +13,7 @@ function Food() {
 
   return (
     <>
-      <div className="w-full h-full flex flex-col justify-center items-center md:flex-row lg:flex-row md:flex-wrap">
+      <div className="w-full h-screen flex flex-col justify-center items-center md:flex-row lg:flex-row md:flex-wrap">
         {categoryProducts.map((product) => (
           <div
             key={product.id}
