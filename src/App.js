@@ -1,19 +1,24 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Menu from "./components/Menu";
-import Contact from "./components/Contact";
+import Home from "./pages/Home";
+import Navbar from "./components/header/Navbar";
+import Menu from "./pages/Menu";
+import Food from "./pages/Food";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </div>
+    <ShoppingCartProvider>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/category/:categoryName" element={<Food />} />
+          <Route path='/cart' element={<Cart/>} />
+        </Routes>
+      </div>
+    </ShoppingCartProvider>
   );
 }
 
