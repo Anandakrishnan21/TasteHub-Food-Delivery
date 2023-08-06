@@ -34,7 +34,7 @@ function Category() {
       {data.map((item) => (
         <div
           key={item.id}
-          className={`w-full flex flex-row justify-center items-center border-2 border-rose-600 rounded`}
+          className={`w-full  flex flex-row justify-center items-center border-2 border-rose-600 rounded`}
         >
           <div
             className={`w-1/2 h-72 lg:h-96 bg-${item.color} text-${item.text} flex flex-col justify-center items-center text-center font-semibold gap-y-3`}
