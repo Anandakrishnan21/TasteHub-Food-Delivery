@@ -20,13 +20,13 @@ const paymentMethod = [
 
 function Payment() {
   return (
-    <div className="w-11/12 h-2/6 md:h-1/4 bg-rose-100 flex flex-col justify-center items-center rounded">
+    <div className="w-11/12 h-2/6 lg:h-1/4 bg-rose-100 flex flex-col justify-center items-center rounded">
       <form className="w-full h-full p-2 flex flex-col gap-2">
         <p className="font-semibold text-2xl">Payment Method</p>
-        <div className="w-full h-full flex flex-col md:flex-row justify-center items-center gap-3">
+        <div className="w-full h-full flex flex-col lg:flex-row justify-center items-center gap-3">
           {paymentMethod.map((payment) => (
-            <div key={payment.id} className="w-full md:w-4/12 h-10">
-              <button className="w-full h-full flex flex-row items-center justify-center gap-3 md:justify-around md:p-2 rounded bg-white text-slate-400">
+            <div key={payment.id} className="w-full lg:w-4/12 h-10">
+              <button className="w-full h-full flex flex-row items-center justify-center gap-3 md:p-2 rounded bg-white text-slate-400">
                 <img src={payment.img} alt="" className="w-6 h-6" />
                 <p>{payment.type}</p>
               </button>
