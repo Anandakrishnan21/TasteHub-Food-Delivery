@@ -8,7 +8,7 @@ function CartItems() {
   return (
     <div className="bg-rose-100 w-11/12 flex items-center flex-col rounded gap-2 p-2">
       <h1 className="font-semibold text-xl">My Cart</h1>
-      <div className="w-5/6 flex gap-3 flex-col">
+      <div className="w-full flex gap-3 flex-col">
         {cartItems.map((item) => (
           <CartItem key={item.id} id={item.id} quantity={item.quantity} />
         ))}

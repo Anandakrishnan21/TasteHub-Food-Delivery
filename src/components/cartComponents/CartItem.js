@@ -9,7 +9,7 @@ export function CartItem({ id, quantity }) {
 
   return (
     <>
-      <div className="w-full flex flex-row items-center justify-around md:justify-center gap-2">
+      <div className="w-full flex flex-row items-center justify-around gap-2">
         <img src={item.img} alt={item.title} className="w-12 h-12" />
         <div className="flex flex-row gap-2 w-4/12 items-center justify-center">
           <div className="flex flex-row gap-2 justify-center items-center">
