@@ -20,7 +20,7 @@ function Navbar() {
           <img
             src="https://cdn2.iconfinder.com/data/icons/quarantine-4/64/food_delivery_scooter_motorcycle_transportation0-512.png"
             alt=""
-            className="w-10 h-10"
+            className="w-12 h-10"
           />
           <p>TasteHub</p>
         </div>
